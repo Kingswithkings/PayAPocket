@@ -32,7 +32,7 @@ namespace PayaPocket.Repositories
             try
             {
                 //check if user already exist
-                var existingUser = await _userManager.FindByEmailAsync(model.EmailAddress);
+                var existingUser = await _userManager.FindByEmailAsync  (model.EmailAddress);
 
                 if (existingUser != null)
                 {
